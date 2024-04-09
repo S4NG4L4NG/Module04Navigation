@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04Navigation.CarouselPage1" Title="Leandro">
+    <ContentPage>
+        <ContentPage.Content Title="Page 1">
+            <StackLayout>
+                <Image Source="Gouba.png" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <Label Text="GO GOUBA" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </ContentPage.Content>
+   </ContentPage>
+
+    <ContentPage Title="Page 2">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="Starters" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Bulbasaur</x:String>
+                            <x:String>Charmander</x:String>
+                            <x:String>Squirtle</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+    <ContentPage Title="Page 3">
+        <ContentPage.Content>
+            <StackLayout>
+                <Label Text="User Input Form" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <Entry Placeholder="Enter Name" />
+                <Entry Placeholder="Enter Email" />
+                <Button Text="Submit" />
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+
+</CarouselPage>
